@@ -126,6 +126,60 @@ a:hover {
   opacity: 1;
 }
 
+.focus {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--color-fg);
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.focus-placeholder {
+  position: absolute;
+  left: 5%;
+  bottom: 10px;
+  font-size: 1em;
+  text-align: center;
+  color: var(--color-link);
+  font-style: italic;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.focus-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  background: transparent;
+  padding: 5px 0;
+  color: var(--color-fg);
+  padding: 0.5rem;
+}
+
+.focus-input:focus + .focus-placeholder,
+.focus-input:valid + .focus-placeholder {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.focus-input::placeholder {
+  color: transparent;
+}
+
+.no-border {
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-out;
+}
+
+.no-border:hover {
+  border-bottom: 2px solid var(--color-fg);
+  transition: all 0.3s ease-out;
+}
+
 @keyframes opacity {
   0% {
     opacity: 1;
