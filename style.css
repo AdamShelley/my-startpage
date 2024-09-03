@@ -21,7 +21,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 460px 600px 1fr;
   grid-template-areas: ". left right .";
-  column-gap: 80px;
+  column-gap: 50px;
   justify-items: center;
   align-items: center;
   min-height: 100%;
@@ -57,7 +57,7 @@ body {
 .category {
   display: flex;
   flex-direction: column;
-  width: 180px;
+  width: 200px;
 }
 
 .bookmarks {
@@ -78,7 +78,7 @@ body {
 }
 
 li {
-  font-size: 16px;
+  font-size: 14px;
   list-style-type: none;
   padding: 5px;
 }
