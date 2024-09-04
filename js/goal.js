@@ -28,6 +28,13 @@ focusInput.addEventListener('keydown', (e) => {
                 goal
             }));
             focusContainer.classList.add('no-border');
+            focusInput.classList.add('flash-text');
+
+            setTimeout(() => {
+                focusInput.classList.remove('flash-text');
+            }, 500);
+
+            focusInput.blur()
         }
     }
 })
