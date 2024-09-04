@@ -10,7 +10,6 @@ const getLocalStorageGoal = () => {
         new Date(goal.date).getMonth() === today.getMonth() &&
         new Date(goal.date).getDate() === today.getDate();
 
-        console.log(isSameDay)
     if (isSameDay) {
         focusInput.value = goal.goal;
         focusContainer.classList.add('no-border');
