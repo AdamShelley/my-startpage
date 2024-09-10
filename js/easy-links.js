@@ -24,3 +24,7 @@ if (key !== lastKey) {
     window.location.href = matchingLinks[currentIndex === 0 ? matchingLinks.length - 1 : currentIndex - 1].href;
   }
 });
+
+window.onload = function () {
+  document.body.focus();
+};
