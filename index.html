@@ -21,19 +21,17 @@
           <p>> cd ~/<span class="blinking">_</span></p>
         </div>
 
-        <div class="bookmarks">
+        <div class="bookmarks" id="bookmarks">
           <div class="category">
             <div class="links">
               <li class="title">work</li>
-              <li><a href="https://gmail.com">gmail</a></li>
+              <li><a href="https://gmail.com" data-key="g">gmail</a></li>
+              <li><a href="https://vim.rtorr.com/" data-key="v">vim</a></li>
+              <li><a href="https://my.brain.fm/" data-key="b">brain.fm</a></li>
               <li>
-                <a href="https://vim.rtorr.com/">vim</a>
-              </li>
-              <li>
-                <a href="https://my.brain.fm/">brain.fm</a>
-              </li>
-              <li>
-                <a href="https://drive.google.com/drive/my-drive">drive</a>
+                <a href="https://drive.google.com/drive/my-drive" data-key="d"
+                  >drive</a
+                >
               </li>
             </div>
           </div>
@@ -42,41 +40,46 @@
             <div class="links">
               <li class="title">dev</li>
               <li>
-                <a href="https://github.com/AdamShelley">github</a>
+                <a href="https://github.com/AdamShelley" data-key="g">github</a>
               </li>
-              <li>
-                <a href="https://lobste.rs/">lobste.rs</a>
-              </li>
+              <li><a href="https://lobste.rs/" data-key="l">lobste.rs</a></li>
             </div>
           </div>
 
           <div class="category">
             <div class="links">
               <li class="title">
-                <a style="color: #eadbb2" href="https://reddit.com">reddit</a>
+                <a href="https://reddit.com" data-key="r" style="color: #eadbb2"
+                  >reddit</a
+                >
               </li>
               <li>
-                <a href="https://old.reddit.com/r/programming/">programming</a>
+                <a href="https://old.reddit.com/r/programming/" data-key="p"
+                  >programming</a
+                >
               </li>
               <li>
-                <a href="https://old.reddit.com/r/webdev/">webdev</a>
+                <a href="https://old.reddit.com/r/webdev/" data-key="w"
+                  >webdev</a
+                >
               </li>
             </div>
           </div>
+
           <div class="category">
             <div class="links">
               <li class="title">hobbies</li>
-
               <li>
-                <a href="https://www.hackchinese.com/dashboard">hackchinese</a>
+                <a href="https://www.hackchinese.com/dashboard" data-key="h"
+                  >hackchinese</a
+                >
               </li>
               <li>
-                <a href="https://www.mylingua.world/feed/">mylingua</a>
+                <a href="https://www.mylingua.world/feed/" data-key="m"
+                  >mylingua</a
+                >
               </li>
-
-              <li>
-                <a href="https://youtube.com/">youtube</a>
-              </li>
+              <li><a href="https://youtube.com/" data-key="y">youtube</a></li>
             </div>
           </div>
 
@@ -84,13 +87,16 @@
             <div class="links">
               <li class="title">music</li>
               <li>
-                <a href="https://www.youtube.com/watch?v=_x-WgkX5B7c&t=595s"
+                <a
+                  href="https://www.youtube.com/watch?v=_x-WgkX5B7c&t=595s"
+                  data-key="l"
                   >LIS</a
                 >
               </li>
-
               <li>
-                <a href="https://www.youtube.com/watch?v=Qh7ICKRgFW8&t=2967s"
+                <a
+                  href="https://www.youtube.com/watch?v=Qh7ICKRgFW8&t=2967s"
+                  data-key="h"
                   >HZD</a
                 >
               </li>
@@ -113,5 +119,5 @@
   </body>
   <script async src="./js/date.js"></script>
   <script async src="./js/goal.js"></script>
-  <script async src="./js/weather.js"></script>
+  <script async src="./js/easy-links.js"></script>
 </html>
