@@ -25,6 +25,4 @@ if (key !== lastKey) {
   }
 });
 
-window.onload = function () {
-  document.body.focus();
-};
+
