@@ -18,10 +18,12 @@ const getLocalStorageGoal = () => {
 
 
 focusInput.addEventListener('keydown', (e) => {
+    console.log('Key pressed:', e.key);
     if (e.key === 'Enter') {
         const goal = e.target.value;
-
+        console.log(goal)
         if (goal) {
+
             localStorage.setItem('goal',JSON.stringify({
                 date: new Date(),
                 goal
