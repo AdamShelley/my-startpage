@@ -8,112 +8,101 @@
 
   <body>
     <div class="container">
-      <div class="left-container">
+      <div class="head">
+        <p>> cd ~/<span class="blinking">_</span></p>
         <div id="date"></div>
-        <div class="gif">
-          <!-- <img src="pic1.jpg" /> -->
-          <img src="./images/pic2.png" />
-        </div>
       </div>
 
-      <div class="right-container">
-        <div class="head">
-          <p>> cd ~/<span class="blinking">_</span></p>
-        </div>
-
-        <div class="bookmarks" id="bookmarks">
-          <div class="category">
-            <div class="links">
-              <li class="title">work</li>
-              <li><a href="https://gmail.com" data-key="g">gmail</a></li>
-              <li><a href="https://vim.rtorr.com/" data-key="v">vim</a></li>
-              <li><a href="https://my.brain.fm/" data-key="b">brain.fm</a></li>
-              <li>
-                <a href="https://drive.google.com/drive/my-drive" data-key="d"
-                  >drive</a
-                >
-              </li>
-            </div>
-          </div>
-
-          <div class="category">
-            <div class="links">
-              <li class="title">dev</li>
-              <li>
-                <a href="https://github.com/AdamShelley" data-key="g">github</a>
-              </li>
-              <li><a href="https://lobste.rs/" data-key="l">lobste.rs</a></li>
-            </div>
-          </div>
-
-          <div class="category">
-            <div class="links">
-              <li class="title">
-                <a href="https://reddit.com" data-key="r" style="color: #eadbb2"
-                  >reddit</a
-                >
-              </li>
-              <li>
-                <a href="https://old.reddit.com/r/programming/" data-key="p"
-                  >programming</a
-                >
-              </li>
-              <li>
-                <a href="https://old.reddit.com/r/webdev/" data-key="w"
-                  >webdev</a
-                >
-              </li>
-            </div>
-          </div>
-
-          <div class="category">
-            <div class="links">
-              <li class="title">hobbies</li>
-              <li>
-                <a href="https://www.hackchinese.com/dashboard" data-key="h"
-                  >hackchinese</a
-                >
-              </li>
-              <li>
-                <a href="https://www.mylingua.world/feed/" data-key="m"
-                  >mylingua</a
-                >
-              </li>
-              <li><a href="https://youtube.com/" data-key="y">youtube</a></li>
-            </div>
-          </div>
-
-          <div class="category">
-            <div class="links">
-              <li class="title">music</li>
-              <li>
-                <a
-                  href="https://www.youtube.com/watch?v=_x-WgkX5B7c&t=595s"
-                  data-key="l"
-                  >LIS</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/watch?v=Qh7ICKRgFW8&t=2967s"
-                  data-key="h"
-                  >HZD</a
-                >
-              </li>
-            </div>
+      <div class="bookmarks" id="bookmarks">
+        <div class="category">
+          <div class="links">
+            <li class="title">work</li>
+            <li><a href="https://gmail.com" data-key="g">gmail</a></li>
+            <li><a href="https://vim.rtorr.com/" data-key="v">vim</a></li>
+            <li><a href="https://my.brain.fm/" data-key="b">brain.fm</a></li>
+            <li>
+              <a href="https://drive.google.com/drive/my-drive" data-key="d"
+                >drive</a
+              >
+            </li>
           </div>
         </div>
-        <div class="focus">
-          <input
-            id="focus-input"
-            class="focus-input"
-            required
-            autocomplete="off"
-          />
-          <label for="focus-input" class="focus-placeholder"
-            >What's your focus for the day?</label
-          >
+
+        <div class="category">
+          <div class="links">
+            <li class="title">dev</li>
+            <li>
+              <a href="https://github.com/AdamShelley" data-key="g">github</a>
+            </li>
+            <li><a href="https://lobste.rs/" data-key="l">lobste.rs</a></li>
+          </div>
         </div>
+
+        <div class="category">
+          <div class="links">
+            <li class="title">
+              <a href="https://reddit.com" data-key="r" style="color: #eadbb2"
+                >reddit</a
+              >
+            </li>
+            <li>
+              <a href="https://old.reddit.com/r/programming/" data-key="p"
+                >programming</a
+              >
+            </li>
+            <li>
+              <a href="https://old.reddit.com/r/webdev/" data-key="w">webdev</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="links">
+            <li class="title">hobbies</li>
+            <li>
+              <a href="https://www.hackchinese.com/dashboard" data-key="h"
+                >hackchinese</a
+              >
+            </li>
+            <li>
+              <a href="https://www.mylingua.world/feed/" data-key="m"
+                >mylingua</a
+              >
+            </li>
+            <li><a href="https://youtube.com/" data-key="y">youtube</a></li>
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="links">
+            <li class="title">music</li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=_x-WgkX5B7c&t=595s"
+                data-key="l"
+                >LIS</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=Qh7ICKRgFW8&t=2967s"
+                data-key="h"
+                >HZD</a
+              >
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="focus">
+        <input
+          id="focus-input"
+          class="focus-input"
+          required
+          autocomplete="off"
+        />
+        <label for="focus-input" class="focus-placeholder"
+          >What's your focus for the day?</label
+        >
       </div>
     </div>
   </body>
